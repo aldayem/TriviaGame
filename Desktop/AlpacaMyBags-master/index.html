@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css.css"> -->
+
+
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  
+  <style type="text/css">
+    #map {
+        height: 235px;
+      }
+  </style>
+
+
+  </head>
+  <body>
+  <div class="jumbotron">
+        <h1 class="text-center">Alpaca My Bags!</h1>
+        <p class="text-center">Your One Stop For All Travel</p>
+    </div>
+
+
+  <div class="container">
+    <div  class="row">
+      <input id="address" type="text" class="col-md-10" >
+      <input id="submit" type="button" value="search" class="col-md-2">
+    </div>
+
+    <div class="row">
+      <label id="cityName"></label>
+  
+
+      <div id="map" class="col-md-12"></div>
+
+      <div class="col-md-12"  id="weather">
+          
+      </div>
+
+
+      <div class = "col-md-12" id ="images"></div>
+</dive>
+
+    </div>
+</div>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMEJRQwEqSfbWxJTfzqIdlEmIiIvHA3Os&callback=initMap">
+    </script>
+
+
+
+    <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Roboto, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+  <i class="icon-location form-control-icon" aria-hidden="true"></i>
+
+  <label class="sr-only" for="searchKeywords">Where do you want to go?</label>
+
+  <div class="visible-xs searchbox-xs-btn-affordance pull-left">
+                <div class="btn btn-lg btn-primary js-launchModal">
+                    <i aria-hidden="true" class="icon-search"></i>
+                </div>
+    </div>
+
+    <br>
+    <br> 
+
+  <!-- Carosole of Cities -->
+<div class="slideshow-container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="assets/iceland.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="assets/paris.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="assets/mountrush.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+  <!-- Google Places That Pops Up -->
+  <div class="google-places"></div>
+
+  
+
+  
+
+ <script type="text/javascript" src="assets/js/alpaca.js"></script>
+
+
+
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMEJRQwEqSfbWxJTfzqIdlEmIiIvHA3Os&callback=initMap">
+    </script>
+
+    
+
+    
+
+  </body>
+</html>
